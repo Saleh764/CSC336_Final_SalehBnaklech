@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using BLL.Wrapper;
+using BLL.Wrapper.NoutFondExeption;
 using DAL.Repositories.GenericeRepositories;
 
 namespace BLL.Service._GenericeService
@@ -45,10 +46,10 @@ namespace BLL.Service._GenericeService
         {
             var response = new ApiResponse<Dto>();
             var entity = _mapper.Map<Entity>(dto);
-            //if (entity != null)
-            //{
-            //    throw new Exception("null");
-            //}
+            if (entity == null)
+            {
+                throw new NotFoundExeption("The requested resource was not found.");
+            }
 
 
             var result = _repository.Add(entity);
