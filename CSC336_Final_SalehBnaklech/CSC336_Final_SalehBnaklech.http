@@ -1,0 +1,6 @@
+@CSC336_Final_SalehBnaklech_HostAddress = http://localhost:5230
+
+GET {{CSC336_Final_SalehBnaklech_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
