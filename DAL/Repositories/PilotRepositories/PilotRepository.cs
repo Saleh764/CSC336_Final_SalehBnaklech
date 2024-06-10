@@ -12,7 +12,7 @@ namespace DAL.Repositories.PilotRepository
 {
     public class PilotRepository : GenericeRepository<Pilot> , IPilotRepository
     {
-        public PilotRepository(DbContext umsContext) : base(umsContext)
+        public PilotRepository(AirplaneSystemContext airplaneSystemContext) : base(airplaneSystemContext)
         {
 
         }
