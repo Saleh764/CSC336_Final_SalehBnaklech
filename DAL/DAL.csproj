@@ -14,9 +14,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\AirPlenRepository\" />
-    <Folder Include="Repositories\PilotRepository\" />
-  </ItemGroup>
-
 </Project>
